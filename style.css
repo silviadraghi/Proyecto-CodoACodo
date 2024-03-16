@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap");
+
+/* reseteo generales de estilos */
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     color: var(--clr-black);
+     font-family: "Rubik", sans-serif;
+}
+
+ul {
+     list-style-type: none;
+}
+
+a {
+     text-decoration: none;
+     font-family: "Julius Sans One", sans-serif;
+}
+button {
+     background-color: transparent;
+     border: 0;
+     border-radius: 0;
+}
+
+/* colores en variables. */
+:root {
+     --clr-brown: #95674c;
+     --clr-blue: #4a90e2;
+     --clr-white: #f2f2f2;
+     --clr-beige: #f5f5dc;
+}
+
+/* comienzan estilos de nav bar */
+.nav-bar {
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     box-shadow: 0 0 20px -5px rgb(0, 0, 0, 0.25);
+     width: 100vmax;
+     height: 100px;     
+}
+.nav-bar img {
+     width: 200px;
+     
+}
+
+.container-nav{
+     display: flex;
+     gap:32px
+     
+}
+
+.nav-link {
+     display: flex;
+     justify-content:flex-end;
+     gap: 32px;
+     font-family: "Julius Sans One", sans-serif;
+     color: var(--clr-brown);
+     font-size: 22px;
+}
+.redes {
+     font-size: 22px;
+     display: flex;
+     gap: 16px;
+     color: var(--clr-brown);
+     
+}
+svg{
+     font-size: 26px;
+}
