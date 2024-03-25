@@ -27,3 +27,4 @@ function showNextImage() {
   
   window.addEventListener('load', startTimer);
   
+  
