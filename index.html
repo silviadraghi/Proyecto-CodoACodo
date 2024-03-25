@@ -1,34 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!-- link de boostraps para iconos -->
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- link de boostraps para iconos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./style.css">
-       <title>De Buena Madera</title>
+    <title>De Buena Madera</title>
 </head>
+
 <body>
+    <!-- INICIO de barra de navegación -->
     <nav class="nav-bar">
-            <a href="#"><img src="./images/logo.png" alt="Logo"></a>
-        
+        <a href="#"><img src="./images/logo.png" alt="Logo"></a>
+
         <div class="container-nav">
             <ul>
                 <div class="nav-link">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#quienes-somos">Quienes somos</a></li>
-                    <li><a href="#nuestros-proyectos">Nuestros proyectos</a></li>
-                    <li><a href="#contacto">Contactános</a></li>
+                    <li class="link"><a href="#">Home</a></li>
+                    <li class="link"><a href="#quienes-somos">Quienes somos</a></li>
+                    <li class="link"><a href="#nuestros-proyectos">Nuestros proyectos</a></li>
+                    <li class="link"><a href="#contacto">Contactános</a></li>
                 </div>
             </ul>
             <div class="redes">
-            <!-- iconos de bootstraps -->
-            <a href="https://www.facebook.com/" target="_blank"> <i class="bi bi-facebook"></i></a>
-            <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+                <!-- iconos de bootstraps -->
+                <a href="https://www.facebook.com/" target="_blank"> <i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
             </div>
-        </div> 
+        </div>
     </nav>
-    
+    <!-- fin de barra de navegación -->
+
+    <!-- Incio slider -->
+    <section class="Home">
+
+        <div class="container-slider">
+           
+            <div class="slider" id="slider">
+              
+                <img src="./images/carrusuel1.jpg" alt="image1" class="imagen-slider" id="slider1">
+                <img src="./images/carrusuel2.jpg" alt="image2" class="imagen-slider" id="slider2">
+                <img src="./images/carrusuel3.jpg" alt="image3" class="imagen-slider" id="slider3">
+                <div class="fixed-content">
+                    <h1 class="main-tittle">DE BUENA MADERA</h1>
+                    <p class="intro-text">¡Bienvenidos a De Buena Madera, donde el arte se fusiona con la funcionalidad para dar vida a tus espacios!
+                    </p>
+                    <button class="general-button"><a class="link-to-catalogo" href="./catalogo.html">Conocé nuestro productos</a></button>
+                </div>
+            </div>
+          
+        </div>
+    </section>
+
+    <!-- fin  slider -->
+
     <script src="./script.js"></script>
 </body>
+
 </html>
