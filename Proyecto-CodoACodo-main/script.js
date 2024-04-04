@@ -8,7 +8,6 @@ const totalImages = sliderImages.length;
 let currentIndex = 0;
 
 
-
 function showNextImage() {
     sliderImages[currentIndex].style.display = 'none';
     currentIndex++;
