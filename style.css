@@ -34,6 +34,7 @@ button {
 
 /* comienzan estilos de nav bar */
 .nav-bar {
+	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
@@ -46,10 +47,13 @@ button {
 	
 }
 .nav-bar img {
-	width: 200px;
+	width: 25%;
+	min-width: 100px;
+
 }
 
 .container-nav {
+	
 	display: flex;
 	gap: 2rem;
 }
@@ -68,13 +72,22 @@ button {
 	transition: .3 ;
 }
 .link:hover{
-	border-bottom: 1px solid #95674c ;
+	border-bottom: 1px solid rgba(202, 137, 99, 0.729) ;
 }
 .redes {
 	font-size: 1rem;
 	display: flex;
 	gap: 1rem;
 	color: var(--clr-brown);
+	
+}
+
+.redes a {
+	transition: .3s;
+	font-size: 1.2rem;
+}
+.redes a:hover{
+	transform: scale(1.3);
 }
 
 /* commienzan estilos de slider */
