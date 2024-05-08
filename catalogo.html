@@ -13,23 +13,28 @@
 
 <body>
     <!-- INICIO de barra de navegación -->
-    <nav class="nav-bar">
-        <a href="#"><img src="./images/logo.png" alt="Logo"></a>
-
-        <div class="container-nav">
-            <ul class="nav-link">           
-                    <li class="link"><a href="./index.html">Home</a></li>
-                    <li class="link"><a href="./index.html#quienesSomos">Quienes somos</a></li>
-                    <li class="link"><a href="./index.html#nuestros-proyectos">Nuestros proyectos</a></li>
-                    <li class="link"><a href="./index.htmls#contacto">Contactanos</a></li>               
+    <header>
+        <div class="logo">
+            <a href="#"><img src="./images/logo.png" alt="Logo" /></a>
+            <button id="btn-nav-bar" class="boton-abrir-menu"><i class="bi bi-list"></i></button>
+        </div>
+        <nav id="nav-bar" class="nav-bar">
+            <ul class="nav-link">
+                <li id="item-link" class="link"><a href="./index.html">Home</a></li>
+                <li id="item-link" class="link"><a href="./index.html#quienesSomos">Quienes somos</a></li>
+                <li id="item-link" class="link"><a href="./index.html#nuestros-proyectos">Nuestros proyectos</a></li>
+                <li id="item-link" class="link"><a href="./index.html#contacto">Contactanos</a></li>
             </ul>
             <div class="redes">
                 <!-- iconos de bootstraps -->
                 <a href="https://www.facebook.com/" target="_blank"> <i class="bi bi-facebook"></i></a>
                 <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
             </div>
-        </div>
-    </nav>
+            </div>
+            <button class="boton-cerrar-menu" id="boton-cerrar"><i class="bi bi-x"></i></button>
+        </nav>
+    </header>
+
     <!-- fin de barra de navegación -->
 
  <!-- inicio descripcion  -->
@@ -120,8 +125,50 @@
     <p>MESA REDONDA</p>
     <a href="#">VER MAS</a>
    </article>
+   <a class="btn-wsp" href="https://walink.co/04217d" target="_blank">
+    <i class="bi bi-whatsapp"></i>
+</a>
  </section>
+  <!---------inicio del footer-------->
 
+  <footer class="pie-pagina">
+    <div class="grupo-1">
+        <div class="mapa">
+            <h3>como llegar</h3>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3277.6115295316963!2d-58.40286492493447!3d-34.765377366052554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd2ec64d2d01d%3A0x3240c3a9f9d9fae2!2sGral.%20Bartolom%C3%A9%20Mitre%2C%20Lomas%20de%20Zamora%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1713894758274!5m2!1ses!2sar"></iframe>
+        </div>
+
+        <div class="inf">
+            <h4>información general</h4>
+            <p>de buena madera</p>
+            <p>mitre 8465</p>
+            <p>buenos aires</p>
+            <p>argentina</p>
+            <p>Escribínos por wp al:3415 5555</p>
+            <p>Email : tumail@gmail.com</p>
+        </div>
+
+        <div class="nav-footer">
+            <ul>
+                <li class="link-footer"><a href="./index.html">Home</a></li>
+                <li class="link-footer"><a href="./index.html#quienesSomos">Quienes somos</a></li>
+                <li class="link-footer"><a href="./index.html#nuestros-proyectos">Nuestros proyectos</a></li>
+                <li class="link-footer"><a href="./index.html#contacto">Contactános</a></li>
+            </ul>
+            <div class="redes-social">
+                <a href="https://www.facebook.com/" target="_blank"> <i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="grupo-2">
+        <p class="nombre-footer"> &copy;2024 de buena madera todos los derechos son
+            reservados</p>
+
+
+    </div>
+</footer>
 
  <script src="./script.js"></script>
 </body>
