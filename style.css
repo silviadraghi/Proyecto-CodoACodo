@@ -385,6 +385,24 @@
    font-family: "Julius Sans One", sans-serif;
  }
 
+ .inputBox span {
+  position: absolute;
+  bottom: 22px;
+  right: 17px;
+  font-size: 14px;
+  color: red;
+ }
+ #submit-error {
+  color: red;
+ }
+ .inputBox span i {
+  color: #fff;
+  font-size: 1.5rem;
+  position: absolute;
+  bottom: -8px;
+  right: -21px;
+ }
+
  .inputButtons {
    display: flex;
    flex-direction: column;
@@ -393,7 +411,8 @@
  }
 
  .inputButtons .submit {
-   align-self: flex-end;
+   align-self: center;
+   margin-bottom: 10px;
  }
 
  .radio {

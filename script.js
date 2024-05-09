@@ -42,3 +42,50 @@ botonesBarra.forEach((boton) =>{
     navBar.classList.remove("nav-active")
   })
 })
+
+//validacion contacto
+const nameError = document.getElementById('name-error')
+const telError = document.getElementById('tel-error')
+const emailError = document.getElementById('email-error')
+const msgError = document.getElementById('msg-error')
+const submitError = document.getElementById('submit-error')
+
+function validateName() {
+  let name = document.getElementById('nombre').value;
+
+  if(name.length == 0){
+    nameError.innerHTML = 'Completar tu nombre'
+    return false;
+  }
+  if(!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)) {
+    nameError.innerHTML = 'Escribe tu nombre completo';
+    return false;
+  }
+  nameError.innerHTML = '<i class="bi bi-check"></i>';
+  return true;
+}
+
+function validateTel() {
+  let telefono = document.getElementById('telefono').value;
+
+  if(telefono.length == 0){
+    telError.innerHTML = 'Completar tu telefono'
+    return false;
+  }
+  if(telefono.length !== 10){
+    telError.innerHTML = 'El numero debe contener 10 digitos'
+    return false;
+  }
+  if(!telefono.match(/^[0-9]{10}$/)){
+    telError.innerHTML = 'Completar tu telefono'
+    return false;
+  }
+  telError.innerHTML = '<i class="bi bi-check"></i>';
+    return true;
+}
+
+function validateEmail() {
+  let telefono = document.getElementById('telefono').value;
+}
+
+
