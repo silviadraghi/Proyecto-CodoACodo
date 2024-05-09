@@ -230,7 +230,7 @@
 
  /* comienzan estilos de Nuestros Productos */
  .nuestros-productos {
-   padding: 1rem 8rem;
+   padding: 5rem 10rem;
    position: relative;
  }
 
@@ -465,7 +465,7 @@
  /* comienzas estilos para catalogo.html */
 
  .catalogo {
-   padding: 5rem 10rem;
+   padding: 7rem 0rem 4rem 0rem;
    position: relative;
  }
 
@@ -494,12 +494,13 @@
  }
 
  .catalogo-container {
-   width: 95vw;
+   width: 100vw;
    display: grid;
    grid-template-columns: 30% 30% 30%;
-   justify-content: space-evenly;
+   justify-content: center;
    gap: 1.2rem;
    text-align: center;
+   margin-bottom: 2rem;
  }
 
  article {
@@ -510,7 +511,8 @@
  }
 
  article img {
-   width: 100%;
+   max-width: 100%;
+   height: auto;
  }
 
  article p {
