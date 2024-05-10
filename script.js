@@ -43,6 +43,7 @@ botonesBarra.forEach((boton) =>{
   })
 })
 
+
 //validacion contacto
 const nameError = document.getElementById('name-error')
 const telError = document.getElementById('tel-error')
@@ -54,11 +55,11 @@ function validateName() {
   let name = document.getElementById('nombre').value;
 
   if(name.length == 0){
-    nameError.innerHTML = 'Completar tu nombre'
+    nameError.innerHTML = 'Completar nombre'
     return false;
   }
   if(!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)) {
-    nameError.innerHTML = 'Escribe tu nombre completo';
+    nameError.innerHTML = 'Escribir nombre completo';
     return false;
   }
   nameError.innerHTML = '<i class="bi bi-check"></i>';
@@ -69,15 +70,15 @@ function validateTel() {
   let telefono = document.getElementById('telefono').value;
 
   if(telefono.length == 0){
-    telError.innerHTML = 'Completar tu telefono'
+    telError.innerHTML = 'Completar telefono'
     return false;
   }
   if(telefono.length !== 10){
-    telError.innerHTML = 'El numero debe contener 10 digitos'
+    telError.innerHTML = 'Minimo de 10 digitos'
     return false;
   }
   if(!telefono.match(/^[0-9]{10}$/)){
-    telError.innerHTML = 'Completar tu telefono'
+    telError.innerHTML = 'Solo numeros porfavor';
     return false;
   }
   telError.innerHTML = '<i class="bi bi-check"></i>';
@@ -85,7 +86,42 @@ function validateTel() {
 }
 
 function validateEmail() {
-  let telefono = document.getElementById('telefono').value;
+  let email = document.getElementById('email').value;
+
+  if(email.length == 0) {
+    emailError.innerHTML = 'Completar email';
+    return false
+  }
+  if(!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+    emailError.innerHTML = 'Email invalido';
+    return false
+  }
+  emailError.innerHTML = '<i class="bi bi-check"></i>';
+    return true;
+}
+
+function validateMsg() {
+  let mensaje = document.getElementById('mensaje').value;
+  let required = 0;
+  let left = required + mensaje.length;
+  
+  if(left < 30) {
+    msgError.innerHTML = left + ' / 30';
+    return false;
+  }
+
+  msgError.innerHTML = '<i class="bi bi-check"></i>';
+    return true;
+}
+
+function validateForm() {
+  if(!validateName() || !validateTel() || !validateEmail() || !validateMsg()) {
+    submitError.style.display = 'block';
+    submitError.innerHTML = 'Completar el fomulario';
+    setTimeout(function() {submitError.style.display = 'none';}, 2000)
+    return false;
+  }
+  alert('El formulario fue enviado')
 }
 
 

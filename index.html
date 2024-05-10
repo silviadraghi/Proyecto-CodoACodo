@@ -144,15 +144,18 @@
                     </div>
                     <div class="inputBox">
                         <label for="mensaje">Mensaje</label>
-                        <textarea id="mensaje"></textarea>
+                        <textarea id="mensaje" onkeyup="validateMsg()"></textarea>
                         <span id="msg-error"></span>
                     </div>
+
                     <div class="inputButtons">
                         <label class="newsletter" for="newsletter">
                             <input id="newsletter" class="radio" name="newsletter" type="radio" />
                             Aceptas suscribirte a nuestro newsletter
                         </label>
-                        <input class="submit btn" type="submit" />
+                        <label for="imagen" class="subirImagen"><i class="bi bi-upload"></i>Subir imagen</label>
+                        <input type="file" id="imagen" name="imagen"/>
+                        <input class="submit btn" type="submit" onclick="return validateForm()" />
                         <span id="submit-error"></span>
                     </div>
                 </form>
