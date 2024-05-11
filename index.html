@@ -125,29 +125,38 @@
         <img class="shape2" src="./images/Shapes.png" alt="shape2">
         <div class="container-contactanos">
             <div class="contactoForm">
-                <form>
+                <form id="form">
+                    <i class="fas fa-paper-plane"></i>
                     <div class="inputBox">
                         <label for="nombre">Nombre</label>
-                        <input type="text" id="nombre" />
+                        <input type="text" id="nombre" onkeyup="validateName()"/>
+                        <span id="name-error"></span>
                     </div>
                     <div class="inputBox">
                         <label for="email">Email</label>
-                        <input type="email" id="email" />
+                        <input type="email" id="email" onkeyup="validateEmail()"/>
+                        <span id="email-error"></span>
                     </div>
                     <div class="inputBox">
                         <label for="telefono">Teléfono</label>
-                        <input type="tel" id="telefono" />
+                        <input type="tel" id="telefono" onkeyup="validateTel()"/>
+                        <span id="tel-error"></span>
                     </div>
                     <div class="inputBox">
                         <label for="mensaje">Mensaje</label>
-                        <textarea id="mensaje"></textarea>
+                        <textarea id="mensaje" onkeyup="validateMsg()"></textarea>
+                        <span id="msg-error"></span>
                     </div>
+
                     <div class="inputButtons">
                         <label class="newsletter" for="newsletter">
                             <input id="newsletter" class="radio" name="newsletter" type="radio" />
                             Aceptas suscribirte a nuestro newsletter
                         </label>
-                        <input class="submit btn" type="submit" />
+                        <label for="imagen" class="subirImagen"><i class="bi bi-upload"></i>Subir imagen</label>
+                        <input type="file" id="imagen" name="imagen"/>
+                        <input class="submit btn" type="submit" onclick="return validateForm()" />
+                        <span id="submit-error"></span>
                     </div>
                 </form>
                 <a class="btn-wsp" href="https://walink.co/04217d" target="_blank">
