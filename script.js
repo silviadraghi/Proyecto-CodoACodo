@@ -27,7 +27,7 @@ function showNextImage() {
    
 const navBar = document.querySelector("#nav-bar");
 const botonCerrar =document.querySelector("#boton-cerrar");
-const botonesBarra = document.querySelectorAll("#item-link")
+const botonesBarra = document.querySelectorAll(".link")
 const buttonNavBarOpen = document.querySelector('#btn-nav-bar')
 
 buttonNavBarOpen.addEventListener('click', function () {
