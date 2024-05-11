@@ -43,6 +43,7 @@ botonesBarra.forEach((boton) =>{
   })
 })
 
+//funcion para desleccionar el input del newsletter
 
 //validacion contacto
 const nameError = document.getElementById('name-error')
