@@ -973,6 +973,15 @@
      display: none;
      position: relative
    }
+   .catalogo-container {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: center;
+    gap: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
  }
 
  @media screen and (max-width: 425px) {
@@ -1096,5 +1105,13 @@ padding-inline: 1rem;
 .catalogo-descripcion p{
   font-size: 1.2rem;
 }
-
+.catalogo-container {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: center;
+  gap: 1.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
  }
