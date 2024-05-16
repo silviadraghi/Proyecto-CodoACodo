@@ -546,7 +546,9 @@
  }
 
  .catalogo-container {
-   width: 100vw;
+   
+   max-width: 1440px;
+   margin: auto;
    display: grid;
    grid-template-columns: 30% 30% 30%;
    justify-content: center;
