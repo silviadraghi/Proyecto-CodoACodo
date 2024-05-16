@@ -406,11 +406,13 @@
   bottom: 22px;
   right: 0;
   font-size: 14px;
-  color: red;
+  font-weight: bold;
+  color: #000;
   font-family: "Roboto Condensed", sans-serif;
  }
  #submit-error {
-  color: red;
+  color: #000;
+  font-weight: bold;
   margin: 24px 0 0 0;
  }
  .inputBox span i {
@@ -559,6 +561,8 @@
 
  article {
    display: grid;
+   justify-content: center;
+   align-items: center;
    text-align: center;
    box-shadow: 2px 0px 5px gray;
    border-radius: 5px;
